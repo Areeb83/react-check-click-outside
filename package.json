@@ -1,0 +1,56 @@
+{
+  "name": "react-check-click-outside",
+  "version": "1.0.0",
+  "description": "A lightweight React hook to detect and handle clicks outside of a specific element.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Areeb83/react-check-click-outside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Areeb83/react-check-click-outside/issues"
+  },
+  "homepage": "https://github.com/Areeb83/react-check-click-outside#readme",
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "tsup": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean --external react",
+    "dev": "tsup src/index.ts --format cjs,esm --watch --dts --external react",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "click-outside",
+    "use-click-outside",
+    "event-listener",
+    "typescript",
+    "outside-click"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
